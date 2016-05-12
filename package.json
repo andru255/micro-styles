@@ -1,0 +1,21 @@
+{
+  "name": "micro-styles",
+  "version": "1.0.0",
+  "description": "Isolated image to run the styles task under gulp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "andru255",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-clean-css": "^2.0.7",
+    "gulp-css-url-versioner": "^1.1.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-size": "^2.1.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-stylus": "^2.3.1"
+  }
+}
