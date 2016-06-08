@@ -1,0 +1,23 @@
+/*
+ * Solo para version IE
+ * @module ie
+ */
+.lt-ie8 select {
+  padding: 8px 10px;
+}
+.lt-ie8 .register_form_body .type_document_col select {
+  padding: 7px 1px;
+  width: 26.8%;
+}
+.lt-ie8 input[type="text"],
+.lt-ie8 input[type="email"],
+.lt-ie8 input[type="tel"],
+.lt-ie8 input[type="password"] {
+  line-height: 35px;
+}
+.lt-ie8 .rotate180 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=-1, M12=0, M21=0, M22=-1, DX=0, DY=0, SizingMethod='auto expand')";
+}
+.lt-ie9 .gender_col .ioption input {
+  top: 10px;
+}
