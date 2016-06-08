@@ -13,7 +13,7 @@ export NODE_MODULES=$ORIG_HOME/tasks/node_modules
 sed -i -e "s/:$ORIG_UID:$ORIG_GID:/:$DEV_UID:$DEV_GID:/" /etc/passwd
 sed -i -e "s/$DOCKER_USER:x:$ORIG_GID:/$DOCKER_USER:x:$DEV_GID:/" /etc/group
 
-if [ ! -f "$NODE_MODULES" ]; then
+if [ ! -d "$NODE_MODULES" ]; then
   echo "linking node_modules"
   ln -s /usr/local/node_modules $NODE_MODULES
 fi
@@ -23,7 +23,7 @@ su - $DOCKER_USER -c "
   $*
 "
 
-if [ -f "$NODE_MODULES" ]; then
+if [ -d "$NODE_MODULES" ]; then
   echo "removing node_modules"
   rm -fr $NODE_MODULES
 fi
