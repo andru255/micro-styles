@@ -1,4 +1,4 @@
-#!/bin/sh -x
+#!/bin/sh
 export DOCKER_USER="dockerfront"
 export ORIG_PASSWD=$(cat /etc/passwd | grep $DOCKER_USER)
 export ORIG_UID=$(echo $ORIG_PASSWD | cut -f3 -d:)
