@@ -1,16 +1,16 @@
-var basePath = "/home/dockerfront/";
+var basePath = "/usr/local/share";
 var config = {
     src:[
-        basePath + 'input/layouts/_render/*.styl',
-        basePath  + 'input/**/*.styl',
-        '!' + basePath + 'input/**/**/_**/*.styl',
-        '!' + basePath + 'input/_**/*.styl',
-        '!' + basePath + 'input/**/_*.styl'
+        basePath + '/input/layouts/_render/*.styl',
+        basePath  + '/input/**/*.styl',
+        '!' + basePath + '/input/**/**/_**/*.styl',
+        '!' + basePath + '/input/_**/*.styl',
+        '!' + basePath + '/input/**/_*.styl'
     ],
-    build: basePath + "output/css/",
+    build: basePath + "/output/css/",
     options: {
         stylus:{
-            compress: false,
+            compress: false
         },
         cssURLVersioner: {
             lastcommit: true

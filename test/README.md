@@ -1,11 +1,8 @@
-How to run the test?
+## How to run the test?
 
+
+```shell
 cd test
 
-for default
-
-docker run --rm -e DEV_UID=$(id -u) -e DEV_GID=$(id -g) -v $(pwd)/fixture/config:/home/dockerfront/config -v $(pwd)/fixture/tasks/:/home/dockerfront/tasks -v $(pwd)/fixture:/home/dockerfront/input -v $(pwd)/public:/home/dockerfront/output micro-styles gulp
-
-for build
-
-docker run --rm -e DEV_UID=$(id -u) -e DEV_GID=$(id -g) -v $(pwd)/fixture/config:/home/dockerfront/config -v $(pwd)/fixture/tasks/:/home/dockerfront/tasks -v $(pwd)/fixture:/home/dockerfront/input -v $(pwd)/public:/home/dockerfront/output micro-styles gulp build
+docker run --rm -e DEV_UID=$(id -u) -e DEV_GID=$(id -g) -v $(pwd)/fixture/config:/usr/local/share/config -v $(pwd)/fixture/tasks/:/usr/local/share/tasks -v $(pwd)/fixture:/usr/local/share/input -v $(pwd)/public:/usr/local/share/output micro-styles gulp
+```
